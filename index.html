@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did the Vampire Win?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #282c34; /* Dark background */
+            color: #ffffff; /* White text */
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #f39c12; /* Bright orange for title */
+        }
+        #message {
+            font-size: 28px;
+            margin-top: 30px;
+            color: #e74c3c; /* Red for messages */
+        }
+        button {
+            font-size: 22px;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            background-color: #2980b9; /* Light blue buttons */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+        button:hover {
+            background-color: #3498db; /* Brighter blue when hovered */
+        }
+        button:active {
+            transform: scale(0.98); /* Slightly shrink when clicked */
+        }
+        #vampire-img {
+            margin-top: 20px;
+            width: 300px; /* Adjust the size of the image */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Did the Vampire Win?</h1>
+
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+
+    <div id="message"></div>
+
+    <!-- Adding the Vampire Image -->
+    <img id="vampire-img" src="vampire image.jpeg" alt="Vampire Image">
+
+    <script>
+        // Get the buttons and the message div by their IDs
+        const yesButton = document.getElementById('yesBtn');
+        const noButton = document.getElementById('noBtn');
+        const messageDiv = document.getElementById('message');
+
+        // Add a click event listener to the Yes button
+        yesButton.addEventListener('click', function() {
+            messageDiv.textContent = "HAHAHAHA You guys suck";
+        });
+
+        // Add a click event listener to the No button
+        noButton.addEventListener('click', function() {
+            messageDiv.textContent = "Whatever I'm supposed to lose anyway";
+        });
+    </script>
+
+</body>
+</html>
